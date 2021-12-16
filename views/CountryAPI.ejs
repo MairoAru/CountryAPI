@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-style.css">
+    <title>CountryAPI</title>
+</head>
+<body>
+    <h1>CountryAPI</h1>
+    <form action="/" method="POST">
+        <select name="country">
+            <option value="estonia">Estonia</option>
+            <option value="latvia">Latvia</option>
+            <option value="finland">Finland</option>
+        </select>
+
+        <button type="submit">Show info</button>
+    </form>
+    <p>Name of country: <%= CountryInfo.countryName %> </p>
+    <p>Domain: <%= CountryInfo.countryDomain %> </p>
+    <p>Calling code: <%= CountryInfo.countryCallingCode %> </p>
+    <p>Capital: <%= CountryInfo.countryCapital %> </p>
+    <p>Region: <%= CountryInfo.countryRegion %> </p>
+    <p>Sub Region: <%= CountryInfo.countrySubregion %> </p>
+    <p>Population: <%= CountryInfo.countryPopulation %> </p>
+    <p>Timezone: <%= CountryInfo.countryTimezone %> </p>
+    <p>Language: <%= CountryInfo.countryLanguage %> </p>
+    <p>Currency: <%= CountryInfo.countryCurrency %> </p>
+
+</body>
+</html>
